@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+#header-nav {
+	background-color: #f2f2f2;
+}
+
+.navbar-brand {
+	padding-top: 30px;
+	width: 60%;
+}
+
+.navbar-brand h1 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1.8em;
+	color: #000;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #A19D9D;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#logo-img {
+	background: url('../images/yingyang.jpg') no-repeat;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#nav-list {
+	margin-top: 100px;
+	margin-right: 20%;
+	padding: 10px;
+}
+
+#nav-list li {
+	font-size: 1.2em;
+	border-right: thin #e6e6e6 solid;
+}
+
+#nav-list a:hover, #nav-list a:active {
+	border-bottom: thick #e6e6e6 solid;
+	border-radius: 0 15px;
+}
+
+/**---------Small devices----------**/
+@media (min-width: 768px) and (max-width: 991px) {
+	#logo-img {
+		background: url('../images/yingyang-medium.jpg') no-repeat;
+		width: 150px;
+		height: 150px;
+	}
+
+	.navbar-brand {
+		padding-top: 10px;
+		width: 75%;
+	}
+
+	#nav-list {
+		margin-top: 50px;
+		margin-right: 0; 
+		padding: 10px;
+	}
+
+	#nav-list li {
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		height: 100px;
+		width: 90%;
+	}
+
+	.navbar-brand h1 {
+		margin: 0;
+		font-size: 1.5em;
+		width: 90%;
+	}
+
+
+	.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  		border: 1px solid #000;
+	}
+
+	.navbar-header button.navbar-toggle {
+		clear: both;
+		margin-top: -20px;
+	}
+}

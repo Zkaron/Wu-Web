@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base-style.css">
+    <!--Media Query-->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style-small.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-medium.css" />
+</head>
+<body id="background_image">
+    <div id="container">
+        <header>
+            <figure>
+                <img class="imageLogo" src="images/yingyang.jpg" alt="Simbolo Ying Yang" />
+                <caption></caption>
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="infoLink" href="courses.html">Cursos</a></li>
+                    <li><a class="infoLink" href="location.html">Ubicacion</a></li>
+                    <li><a class="infoLink" href="about.html">Acerca de Nosotros</a></li>
+                    <li><a class="infoLink" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article class="menuArticles" id="contactText">
+                <h2>Contacto</h2>
+                <form action="php/contact.php" method="post">
+                    <fieldset>
+                        <legend>Contacto</legend>
+                        <label for="name">Nombre: </label>
+                        <input type="text" name="name" id="name" required placeholder="Carlos" /><br /><br />
+                        <label for="email">Correo: </label>
+                        <input type="email" name="email" id="email" required placeholder="nombre@dominio.com" /><br /><br />
+                        <label for="message">Mensaje:</label>
+                        <textarea rows="10" cols="20" name="message" id="message" placeholder="Mensaje a enviar"></textarea><br />
+                        <button type="submit" name="submit" value="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <footer>
+            Pie de pagina lorem ipsum...
+        </footer>
+    </div>
+</body>
+</html>

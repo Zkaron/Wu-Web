@@ -2,127 +2,65 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Asociación Mexicana de Tai Ji Quan estilo Wu</title>
 	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!--Selects a stylesheet acording to the device's width-->
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style-small.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-medium.css" />
-    <script src="js/script.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDympMEZzJhIIT8mD6niCwUqwbZXXSp1Ag&callback=initMap">
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
 </head>
-<body id="background_image" onload="javascriptEnabled()">
-    <div id="container">
-        <header>
-            <figure>
-                <img class="imageLogo" src="images/yingyang.jpg" alt="Simbolo Ying Yang" />
-                <caption>La imagen debe tener un fondo vacio para que quede en la pag, el cambio queda pendiente</caption>
-            </figure>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a class="infoLink" href="#cursosText" onclick="cursosSelected()">Cursos</a></li>
-                    <li><a class="infoLink" href="#ubicacionText" onclick="ubicacionSelected()">Ubicacion</a></li>
-                    <li><a class="infoLink" href="#acercaText" onclick="acercaSelected()">Acerca de Nosotros</a></li>
-                    <li><a class="infoLink" href="#contactoText" onclick="contactoSelected()">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <article id="inicioText">
-            <h2>¿Qué es el Tai Ji Quan?</h2>
-            <summary>El Tai Chi Chuan, o Tai Ji Quan en chino Romanizado, es un arte marcial enormemente efectivo cuyo desarrollo en el practicante le demanda una alta disciplina y constancia. Su aplicación al combate tanto como sus aportes a la salud ha sido uno de los pilares de las artes marciales de origen chino mejor conocido como Wushu, perteneciendo a la categoría de artes marciales internas (Neijia).
-            En el Tai Chi se exige que las manos, los ojos, el cuerpo y los miembros se muevan como un todo, usando a las piernas como base y a la cintura como eje. Sin embargo el hecho de que las posturas sean relajadas no significa que la ejecución de los movimientos sea débil y carente de esfuerzo, por eso el Tai Chi requiere también de entrenamiento físico mental y respiratorio.</summary>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+                        <div id="logo-img"></div>
+                    </a>
 
-            <h2>Estilo Wu</h2>
-            <p>Perteneciendo a uno de los cinco estilos de Tai Ji más importantes de China el Tai Ji Quan estilo Wu se caracteriza por su forma suave, buscando que el practicante adquiera conciencia de su equilibrio corporal, consiga emplear métodos suaves para conseguir hacer el cuerpo suave, y de esta manera seguir la fuerza de su oponente, aprovechándola para dirigirla de la manera más conveniente.</p>
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Asociacion Mexicana de Tai Chi Quan estilo Wu</h1></a>
+                    </div>
 
-            <h2>Historia</h2>
-            <p>
-            El origen del Tai Ji Quan sigue siendo un tema incierto en el que varios historiadores siguen consensuando un posible origen de este legendario arte marcial del pueblo chino, una de las teorías sobre su origen se atribuye al periodo entre  la dinastía Yuan y Ming (600-700 D.C) dándole la autoría de su creación al alquimista taoísta Zhang San Feng, atribuyéndose diferentes leyendas sobre como este personaje creo dicho arte marcial interno. 
-            Originalmente el arte de Tai Ji Quan (traducido literalmente como “Ultimo supremo” otras de sus traducciones son; “Boxeo máximo celestial” y “Boxeo de las sombras”) , en el pasado fue practicado solamente por su utilidad en combate y autodefensa, junto con la evolución de los periodos de la China desde la dinastía Yuan (1260-1294 D.C), este arte vería su evolución como un arte enfocado a la guerra, volviéndose parte de las artes marciales (Wushu), hasta ser reconocido y practicados por millones hasta nuestros días por sus notables aportes a la mejora de la salud de quienes lo practican, la mejora de las habilidades sociales, y brindar resilencia en las actividades de la vida diaria antes los nuevos retos que presenta nuestra sociedad, el Tai Ji Quan continua adaptándose hasta nuestros días junto  con sus practicantes con la finalidad afrontar todo tipo de situaciones. Aún hasta nuestros días, el Tai Ji Quan sigue conservando su origen marcial perteneciente a las artes marciales internas. Existen tres componentes  distintivos en el aprendizaje de este arte; las posturas, empuje de manos y el uso de armas.
-            Actualmente existen varios estilos del Tai Ji Quan siendo los más conocidos el estilo Chen, Yang, Wu Hao, Wu y Sun. Pero la idea esencial del Tai Ji Quan como arte marcial es evitar el uso de la fuerza muscular e intensificar el uso de un tipo de fuerza intrínseca, una fuerza conocida como Chi (Qì).
-            En su origen histórico El Tai Chi estilo Chen  fue el primer Tai Chi del que se tiene conocimiento alguno y padre de todas las demás escuelas, su origen se remonta a 300 o 400 años  durante la decadencia de la dinastía Ming (1368-1644) y el inicio de la dinastía Qing (1644-1911).
-            De la quinta generación de descendientes de Chen Wangting  nació Chen Changxing (1771-1853) quien tuvo a un estudiante singular que rápidamente adquirió fama en la región de Hebei puesto que se decía “era invencible” entre sus mismos compañeros, a pesar de que no era miembro de la familia Chen, fue el mejor de los estudiantes de Changxing y constantemente recibía retadores de distintos lugares que deseaban poner a prueba sus conocimientos, estamos hablando de Yang Fu Kui,  mejor conocido como Yang Luchan (1799-1872) quien agrego su interpretación a los movimientos de la escuela Chen para iniciar lo que sería la escuela más famosa del mundo , la Yang. Yang Luchan enseño a sus descendientes  Yang Jianhou, Yang Banhou y Wu Quan You (1834-1902). 
-            Wu Quan You se volvería  guardaespaldas de la corte imperial de Beijing durante la dinastía Quing, y uno de los estudiantes más avanzados de Yang Luchan. Su hijo, el maestro Wu Jian Quan (1870-1942) quien crearía un conjunto de movimientos circulares y modernos dando lugar al surgimiento de la escuela “Wu”.  Durante mucho tiempo existió una estrecha relación entre las familias Yang y Wu sin que hubiese una diferenciación entre los estilos. La composición técnica del estilo Wu es muy parecida a la del estilo de Yang Chengfu. Se modificó la forma para hacerla más asequible, eliminando movimientos difíciles y ralentizando otros, creando lo que hoy se conoce como estilo Wu, aunque mantienen la misma estructura que el estilo Yang.  Wu Jian Quan mantuvo la forma antigua original y en sus modificaciones destaca la facilidad de movimientos con la idea de promover el desarrollo del Chi para mantener un bienestar físico y mental. Dentro de estas se conservan los aspectos marciales de los movimientos aunque siendo estos más reducidos y compactos. En su estilo se caracteriza por los pequeños movimientos circulares, el énfasis en la conservación y desarrollo de la fuerza interior, el empleo de posturas moderadas y los movimientos flexibles y coordinados.</p>
-            </article>
-            <article class="menuArticles" id="cursosText">
-                <h2>Cursos</h2>
-                Lorem ipsum...1
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum..
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum..
-            </article>
-            <article class="menuArticles" id="ubicacionText">
-                <h2>Ubicación</h2>
-                <p>Parque los Colomos frente a los estanques siapa.</p>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-                <div id="map"></div>
-            </article>
-            <article class="menuArticles" id="acercaText">
-                <h2>Acerca de Nosotros</h2>
-                <header>
-                Somos una asociación que tiene como fin compartir con la población mexicana la enseñanza y beneficios  del Tai Ji Quan estilo Wu.
-                En nuestra práctica del Tai Ji Quan ofrecemos a los practicantes tres áreas de formación en el estilo Wu, las formas del Tai Ji Quan (tao lu), el empuje de manos (tui shou), aplicaciones de combate (Sanshou). 
-                <header>
-                <section>
-                    <article>
-                        Tao lu es la base de todo el estilo consiste en el aprendizaje de las formas y movimientos del estilo Wu, su correcta ejecución ofrece al practicante un mejor control, flexibilidad y equilibrio del cuerpo, siendo en este nivel donde se encuentran los aportes a la salud y la estética de los movimientos que ofrece el arte.
-                        <video class="video" preload="metadata" controls crossOrigin="anonymous">
-                             <source src="#">
-                        </video>
-                    </article>
-                    <article>
-                        Mejor conocido como Tui Shou (empuje de manos) es en esta etapa  donde el practicante pondrá su  entendimiento de sus movimientos a prueba, es importante en esta etapa adquirir un buen nivel de suavidad y relajamiento corporal que le permitan sentir la fuerza del oponente, pues la capacidad de adaptación del practicante serán la clave para poder vencer la dureza con la suavidad.
-                         <video class="video" preload="metadata" controls crossOrigin="anonymous">
-                             <source src="#">
-                        </video>
-                    </article>
-                    <article>
-                        Sanshou es en esta etapa en la que se pone a prueba en combate y simulaciones de posibles situaciones de peligro las habilidades del practicante para aplicar las técnicas adquiridas en las dos etapas previas, esta etapa demanda que el practicante haya adquirido un cuerpo capaz de sentir la fuerza de su adversario, capacidad de adaptación al estilo y situación en la que está inmerso en el combate.
-                         <video class="video" preload="metadata" controls crossOrigin="anonymous">
-                             <source src="#">
-                        </video>
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <h3>Maestro:</h3> 
-                        Nacido en Chongqing- China, el Maestro Wu Wei es descendiente de la 6ta generación del estilo Tai Ji Quan estilo Wu, posee una gran experiencia en varios tipos de artes marciales <b>(especificar cuáles)</b>, encontrando en el Tai Ji Quan su elección como arte marcial y estilo de vida. 
-                        <img class="articleImage" src="images/grupo.jpg" alt="Nuestro grupo">
-                    </article>
-                    <article>
-                        <h3>Linaje</h3>
-                        Pendiente...
-                    </article>
-                </section>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="about.html">Acerca de Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div><!--.collapse .nav-collapse-->
+                </div> <!--.navbar-header-->
+            </div><!--.container-->
+        </nav>
+    </header>
 
-            </article>
+    <section>
 
-            <article class="menuArticles" id="contactoText">
-                <h2>Contacto</h2>
-                <form action="php/contact.php" method="post">
-                    <fieldset>
-                        <legend>Contacto</legend>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="name" id="name" required placeholder="Carlos" /><br /><br />
-                        <label for="email">Correo: </label>
-                        <input type="email" name="email" id="email" required placeholder="nombre@dominio.com" /><br /><br />
-                        <label for="message">Mensaje:</label>
-                        <textarea rows="10" cols="20" name="message" id="message" placeholder="Mensaje..."></textarea><br />
-                        <button type="submit" name="submit" value="submit">Enviar</button>
-                    </fieldset>
-                </form>
-            </article>
-        </section>
-        <footer>
-            Pie de pagina lorem ipsum...
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <li>Inicio</li>
+                <li>Ubicacion</li>
+                <li>Acerca de Nosotros</li>
+                <li>Contactanos</li>
+            </ul>
+        </div>
+<!--             <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1274.555571880303!2d-103.39129690764925!3d20.70545887832604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d20.7055197!2d-103.3913656!5e0!3m2!1ses-419!2smx!4v1471148969677" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
         </footer>
     </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
