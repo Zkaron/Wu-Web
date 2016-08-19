@@ -1,3 +1,4 @@
+/** Author: Erik **/
 * {
 	box-sizing: border-box;
 	font-family: 'Crimsom Text', sans-serif;
@@ -8,12 +9,10 @@
 #header-nav {
 	background-color: #f2f2f2;
 }
-
 .navbar-brand {
 	padding-top: 30px;
 	width: 60%;
 }
-
 .navbar-brand h1 {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.8em;
@@ -23,11 +22,9 @@
 	margin-bottom: 0;
 	margin-right: 0;
 }
-
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 }
-
 #logo-img {
 	background: url('../images/yingyang.jpg') no-repeat;
 	width: 250px;
@@ -35,29 +32,87 @@
 	margin: 10px;
 	padding: 10px;
 }
-
 #nav-list {
 	margin-top: 130px;
 	margin-right: 5%;
 }
-
 #nav-list li {
 	font-size: 1.2em;
 	border-right: thin #e6e6e6 solid;
 	padding: 2px;
 }
-
 #nav-list a:hover, #nav-list a:active {
 	border-bottom: thick #e6e6e6 solid;
 	border-radius: 0 15px;
 }
-
 #collapsable-nav {
 	width: 100%;
 	padding: 0;
 }
 
 /**-----MAIN CONTENT-----**/
+#main-container {
+	width: 95%;
+}
+#text-main {
+	text-align: justify;
+}
+#video-section, #map-section {
+	position: relative;
+	left: 20%;
+	margin-top: 70px;
+}
+#video-header, #map-header {
+	color: #fff;
+	font-size: 1.6em;
+	padding: 10px;
+	position: absolute;
+	height: 60px;
+	z-index: 100;
+	text-transform: uppercase;
+	background-color: #000;
+}
+#video-header {
+	top: 380px;
+	width: 100%;
+}
+#video-main {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+#map-header {
+	top: 320px;
+	width: 100%;
+	height: 60px;
+	opacity: 0.8;
+}
+#map {
+	margin-left: 0;
+	width: 100%;
+	height: 400px;
+}
+
+/**-------FOOTER-------*/
+
+#footer-container {
+	background-color: #000;
+	width: 95%;
+	color: #fff;
+}
+#footer-nav {
+	float: left;
+	text-align: left;
+}
+#footer-location {
+	margin-top: 15px;
+	text-align: right;
+}
+ul li {
+	list-style: none;
+	float: left;
+	padding: 10px;
+}
 
 /**---------Medium devices---------**/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -67,14 +122,23 @@
 		width: 200px;
 		height: 200px;
 	}
-
 	#nav-list {
 		margin-top: 90px;
 		margin-right: 5%; 
 	}
-
 	#nav-list li {
 		font-size: 1em;
+	}
+
+	/**-----MAIN CONTENT-----**/
+	.col-md-6 {
+		width: 100%;
+	}
+
+	#video-section, #map-section {
+		left: 0;
+		margin-right: 3%;
+		margin-left: 5%;
 	}
 }
 
@@ -86,20 +150,37 @@
 		width: 150px;
 		height: 150px;
 	}
-
 	.navbar-brand {
 		padding-top: 10px;
 		width: 75%;
 	}
-
 	#nav-list {
 		margin-top: 60px;
 		margin-right: 0; 
 		padding: 10px;
 	}
-
 	#nav-list li {
-		font-size: 0.75em;
+		font-size: 0.70em;
+	}
+
+	/**-----MAIN CONTENT-----**/
+	#video-section, #map-section {
+		left: 0;
+	}
+	#video-header {
+		top: 280px;
+		height: auto;
+	}
+	#video-main {
+		height: 300px;
+		text-align: left;
+	}
+	#map-header {
+		top: 240px;
+		height: auto;
+	}
+	#map {
+		height: 300px;
 	}
 }
 
@@ -110,28 +191,44 @@
 		height: 100px;
 		width: 90%;
 	}
-
 	.navbar-brand h1 {
 		margin: 0;
 		font-size: 1.26em;
 		width: 90%;
 	}
-
 	#nav-list {
 		margin: 0;
 	}
-
 	#nav-list li {
-		font-size: 0.9em;
+		font-size: 0.7em;
 	}
-
 	.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   		border: 1px solid #000;
 	}
-
 	.navbar-header button.navbar-toggle {
 		clear: both;
 		margin-top: -20px;
+	}
+
+	/**-----MAIN CONTENT-----**/
+	#video-section, #map-section {
+		left: 0;
+		font-size: .75em;
+	}
+	#video-header {
+		top: 180px;
+		height: auto;
+	}
+	#video-main {
+		height: 200px;
+		text-align: left;
+	}
+	#map-header {
+		top: 140px;
+		height: auto;
+	}
+	#map {
+		height: 200px;
 	}
 }
 
@@ -142,18 +239,41 @@
 		width: 100%;
 		height: 60px;
 	}
-
 	.navbar-brand h1 {
 		margin: 0;
-		font-size: 1.1em;
+		font-size: 1em;
 		width: 80%;
 	}
-
 	#nav-list {
 		margin: 0;
 	}
-
 	#nav-list li {
-		font-size: 0.9em;
+		font-size: 0.7em;
+	}
+
+	/**-----MAIN CONTENT-----**/
+	#text-main {
+		text-align: left;
+		line-height: 1;
+	}
+
+	#video-section, #map-section {
+		left: 0;
+		font-size: .75em;
+	}
+	#video-header {
+		top: 180px;
+		height: auto;
+	}
+	#video-main {
+		height: 200px;
+		text-align: left;
+	}
+	#map-header {
+		top: 140px;
+		height: auto;
+	}
+	#map {
+		height: 200px;
 	}
 }
