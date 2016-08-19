@@ -1,7 +1,10 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Crimsom Text', sans-serif;
+	font-size: 1.1em;
 }
 
+/**-----HEADER-----**/
 #header-nav {
 	background-color: #f2f2f2;
 }
@@ -35,13 +38,13 @@
 
 #nav-list {
 	margin-top: 130px;
-	margin-right: 20%;
-	padding: 10px;
+	margin-right: 5%;
 }
 
 #nav-list li {
 	font-size: 1.2em;
 	border-right: thin #e6e6e6 solid;
+	padding: 2px;
 }
 
 #nav-list a:hover, #nav-list a:active {
@@ -49,10 +52,37 @@
 	border-radius: 0 15px;
 }
 
-/**---------Small devices----------**/
-@media (min-width: 768px) and (max-width: 991px) {
+#collapsable-nav {
+	width: 100%;
+	padding: 0;
+}
+
+/**-----MAIN CONTENT-----**/
+
+/**---------Medium devices---------**/
+@media (min-width: 992px) and (max-width: 1199px) {
+	/**-----HEADER-----**/
 	#logo-img {
 		background: url('../images/yingyang-medium.jpg') no-repeat;
+		width: 200px;
+		height: 200px;
+	}
+
+	#nav-list {
+		margin-top: 90px;
+		margin-right: 5%; 
+	}
+
+	#nav-list li {
+		font-size: 1em;
+	}
+}
+
+/**---------Small devices----------**/
+@media (min-width: 768px) and (max-width: 991px) {
+	/**-----HEADER-----**/
+	#logo-img {
+		background: url('../images/yingyang-small.jpg') no-repeat;
 		width: 150px;
 		height: 150px;
 	}
@@ -63,17 +93,19 @@
 	}
 
 	#nav-list {
-		margin-top: 50px;
+		margin-top: 60px;
 		margin-right: 0; 
 		padding: 10px;
 	}
 
 	#nav-list li {
-		font-size: 1.1em;
+		font-size: 0.75em;
 	}
 }
 
-@media (max-width: 767px) {
+/**---- x-small devices -----**/
+@media (min-width: 321px) and (max-width: 767px) {
+	/**-----HEADER-----**/
 	.navbar-brand {
 		height: 100px;
 		width: 90%;
@@ -81,10 +113,17 @@
 
 	.navbar-brand h1 {
 		margin: 0;
-		font-size: 1.5em;
+		font-size: 1.26em;
 		width: 90%;
 	}
 
+	#nav-list {
+		margin: 0;
+	}
+
+	#nav-list li {
+		font-size: 0.9em;
+	}
 
 	.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   		border: 1px solid #000;
@@ -93,5 +132,28 @@
 	.navbar-header button.navbar-toggle {
 		clear: both;
 		margin-top: -20px;
+	}
+}
+
+/**------  xx-small devices -------**/
+@media (max-width: 320px) {
+	/**-----HEADER-----**/
+	.navbar-brand {
+		width: 100%;
+		height: 60px;
+	}
+
+	.navbar-brand h1 {
+		margin: 0;
+		font-size: 1.1em;
+		width: 80%;
+	}
+
+	#nav-list {
+		margin: 0;
+	}
+
+	#nav-list li {
+		font-size: 0.9em;
 	}
 }
