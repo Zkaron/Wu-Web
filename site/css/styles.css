@@ -108,7 +108,7 @@
 	margin-top: 15px;
 	text-align: right;
 }
-ul li {
+#footer-nav > ul li {
 	list-style: none;
 	float: left;
 	padding: 10px;
