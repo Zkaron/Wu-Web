@@ -20,7 +20,7 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: 'Tai Chi Colomos',
+            title: 'TaiChi Colomos',
             url: "https://www.google.com.mx/maps/place/20%C2%B042'20.0%22N+103%C2%B023'28.9%22W/@20.705551,-103.3935607,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.705551!4d-103.391372?hl=es-419"
         });
 

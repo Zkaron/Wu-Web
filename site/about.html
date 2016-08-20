@@ -2,32 +2,50 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/base-style.css">
-    <!--Media Query-->
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style-small.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-medium.css" />
+    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Jaldi|Poppins" rel="stylesheet"> 
 </head>
-<body id="background_image">
-    <div id="container">
-        <header>
-            <figure>
-                <img class="imageLogo" src="images/yingyang.jpg" alt="Simbolo Ying Yang" />
-                <caption></caption>
-            </figure>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a class="infoLink" href="courses.html">Cursos</a></li>
-                    <li><a class="infoLink" href="location.html">Ubicacion</a></li>
-                    <li><a class="infoLink" href="about.html">Acerca de Nosotros</a></li>
-                    <li><a class="infoLink" href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-<article class="menuArticles" id="aboutText">
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Asociacion Mexicana de Tai Chi Quan estilo Wu</h1></a>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+                        <li class="hidden-lg hidden-md"><a href="index.html">Inicio</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="index.html">Videos</a></li>
+                        <li><a href="about.html">Acerca de Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div><!--.collapse .nav-collapse-->
+                </div> <!--.navbar-header-->
+            </div><!--.container-->
+        </nav>
+    </header>
+
+    <div>
+        <article class="menuArticles" id="aboutText">
                 <h2>Acerca de Nosotros</h2>
                 <header>
                 <p>Somos una asociación que tiene como fin compartir con la población mexicana la enseñanza y beneficios  del Tai Ji Quan estilo Wu.
@@ -70,9 +88,43 @@
                 </section>
 
             </article>
-        <footer>
-            Pie de pagina lorem ipsum...
-        </footer>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-container" class="container">
+            <div class="row">
+                <section id="hours" class="col-lg-6 col-md-6 col-sm-6 text-center">
+                <span>Horario</span>
+                    <br />
+                    Todos los domingos 10:30am - 1:30pm
+                    <br />
+                    Cerrado el resto de la semana
+                    </section>
+                <section id="adress" class="col-lg-6 col-md-6 col-sm-6 text-center">
+                    <span>Direccion</span>
+                    <br />
+                    Bosque Colomos 
+                    <br />
+                    Guadalajara, Jalisco
+                </section>
+                <section id="location" class="col-lg-12 col-md-12 text-center">
+                    <span>Asociacion Mexicana de Tai Chi Chuan estilo Wu</span><span class="hidden-xs hidden-xxs"> | Guadalajara, Jalisco | Mexico</span>
+                    <br class="visible-xs visible-xxs"/>
+                    <span class="visible-xs visible-xxs">Guadalajara, Jalisco | Mexico</span>
+                </section>
+            </div> <!-- .row -->
+        </div> <!-- #footer-container .container -->
+    </footer>
+    
+
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+    <!-- Google Maps API -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDympMEZzJhIIT8mD6niCwUqwbZXXSp1Ag&callback=initMap">
+    </script>
 </body>
 </html>

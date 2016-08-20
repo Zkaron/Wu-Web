@@ -2,37 +2,50 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/base-style.css">
-    <!--Media Query-->
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style-small.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-medium.css" />
-    <script src="js/script.js"></script>
+    <title>Asociación Mexicana de Tai Chi Quan estilo Wu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Jaldi|Poppins" rel="stylesheet"> 
 </head>
-<body id="background_image">
-    <div id="container">
-        <header>
-            <figure>
-                <img class="imageLogo" src="images/yingyang.jpg" alt="Simbolo Ying Yang" />
-                <caption></caption>
-            </figure>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a class="infoLink" href="historia.html">Cursos</a></li>
-                    <li><a class="infoLink" href="location.html">Ubicacion</a></li>
-                    <li><a class="infoLink" href="about.html">Acerca de Nosotros</a></li>
-                    <li><a class="infoLink" href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Asociacion Mexicana de Tai Chi Quan estilo Wu</h1></a>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+                        <li class="hidden-lg hidden-md"><a href="index.html">Inicio</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="index.html">Videos</a></li>
+                        <li><a href="about.html">Acerca de Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div><!--.collapse .nav-collapse-->
+                </div> <!--.navbar-header-->
+            </div><!--.container-->
+        </nav>
+    </header>
+    <!--<div id="container">
         <section>
             <article class="texto-historia">
-            <h2>¿Qué es el Tai Chi Quan?</h2>
-            <p>El Tai Chi Chuan, o Tai Ji Quan en chino Romanizado, es un arte marcial enormemente efectivo cuyo desarrollo en el practicante le demanda una alta disciplina y constancia. Su aplicación al combate tanto como sus aportes a la salud ha sido uno de los pilares de las artes marciales de origen chino mejor conocido como Wushu, perteneciendo a la categoría de artes marciales internas (Neijia).</p>
-            <p>En el Tai Chi se exige que las manos, los ojos, el cuerpo y los miembros se muevan como un todo, usando a las piernas como base y a la cintura como eje. Sin embargo el hecho de que las posturas sean relajadas no significa que la ejecución de los movimientos sea débil y carente de esfuerzo, por eso el Tai Chi requiere también de entrenamiento físico mental y respiratorio.</p>
 
             <h2>Estilo Wu</h2>
             <p>Perteneciendo a uno de los cinco estilos de Tai Chi más importantes de China el Tai Ji Quan estilo Wu se caracteriza por su forma suave, buscando que el practicante adquiera conciencia de su equilibrio corporal, consiga emplear métodos suaves para conseguir hacer el cuerpo suave, y de esta manera seguir la fuerza de su oponente, aprovechándola para dirigirla de la manera más conveniente.</p>
@@ -47,9 +60,68 @@
             Wu Quan You se volvería  guardaespaldas de la corte imperial de Beijing durante la dinastía Quing, y uno de los estudiantes más avanzados de Yang Luchan. Su hijo, el maestro Wu Jian Quan (1870-1942) quien crearía un conjunto de movimientos circulares y modernos dando lugar al surgimiento de la escuela “Wu”.  Durante mucho tiempo existió una estrecha relación entre las familias Yang y Wu sin que hubiese una diferenciación entre los estilos. La composición técnica del estilo Wu es muy parecida a la del estilo de Yang Chengfu. Se modificó la forma para hacerla más asequible, eliminando movimientos difíciles y ralentizando otros, creando lo que hoy se conoce como estilo Wu, aunque mantienen la misma estructura que el estilo Yang.  Wu Jian Quan mantuvo la forma antigua original y en sus modificaciones destaca la facilidad de movimientos con la idea de promover el desarrollo del Chi para mantener un bienestar físico y mental. Dentro de estas se conservan los aspectos marciales de los movimientos aunque siendo estos más reducidos y compactos. En su estilo se caracteriza por los pequeños movimientos circulares, el énfasis en la conservación y desarrollo de la fuerza interior, el empleo de posturas moderadas y los movimientos flexibles y coordinados.</p>
             </article>
         </section>
-        <footer>
-            Pie de pagina lorem ipsum...
-        </footer>
-    </div>
+    </div> -->
+
+        <!--MAIN CONTENT-->
+    <div id="main-container" class="container">
+        <section class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <article id="text-historia-main">
+                    <h2>¿Qué es el Tai Chi Quan?</h2>
+                    <p>El Tai Chi Chuan, o Tai Ji Quan en chino Romanizado, es un arte marcial enormemente efectivo cuyo desarrollo en el practicante le demanda una alta disciplina y constancia. Su aplicación al combate tanto como sus aportes a la salud ha sido uno de los pilares de las artes marciales de origen chino mejor conocido como Wushu, perteneciendo a la categoría de artes marciales internas (Neijia).</p>
+                    <p>En el Tai Chi se exige que las manos, los ojos, el cuerpo y los miembros se muevan como un todo, usando a las piernas como base y a la cintura como eje. Sin embargo el hecho de que las posturas sean relajadas no significa que la ejecución de los movimientos sea débil y carente de esfuerzo, por eso el Tai Chi requiere también de entrenamiento físico mental y respiratorio.</p>
+                </article>
+            </div>
+            <div class="col-md-6 col-md-12 col-sm-12 text-center">
+            <section id="video-section">
+                 <h2 id="video-header">Empuje de Manos</h2>
+                <iframe id="video-main" src="https://www.youtube.com/embed/ZjaYKo-rh5M" frameborder="0" allowfullscreen></iframe>
+            </section>
+                <section id="map-section">
+                    <h2 id="map-header">Ubicacion</h2>
+                    <article id="map"></article>
+                    <h4>Parque colomos, frente a los estanques
+                    del siapa</h4>
+                </section>
+            </div>
+        </section> <!-- .row -->
+    </div> <!-- #main-container .container -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-container" class="container">
+            <div class="row">
+                <section id="hours" class="col-lg-6 col-md-6 col-sm-6 text-center">
+                <span>Horario</span>
+                    <br />
+                    Todos los domingos 10:30am - 1:30pm
+                    <br />
+                    Cerrado el resto de la semana
+                    </section>
+                <section id="adress" class="col-lg-6 col-md-6 col-sm-6 text-center">
+                    <span>Direccion</span>
+                    <br />
+                    Bosque Colomos 
+                    <br />
+                    Guadalajara, Jalisco
+                </section>
+                <section id="location" class="col-lg-12 col-md-12 text-center">
+                    <span>Asociacion Mexicana de Tai Chi Chuan estilo Wu</span><span class="hidden-xs hidden-xxs"> | Guadalajara, Jalisco | Mexico</span>
+                    <br class="visible-xs visible-xxs"/>
+                    <span class="visible-xs visible-xxs">Guadalajara, Jalisco | Mexico</span>
+                </section>
+            </div> <!-- .row -->
+        </div> <!-- #footer-container .container -->
+    </footer>
+    
+
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+    <!-- Google Maps API -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDympMEZzJhIIT8mD6niCwUqwbZXXSp1Ag&callback=initMap">
+    </script>
 </body>
 </html>
