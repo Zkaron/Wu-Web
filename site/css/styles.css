@@ -51,21 +51,21 @@
 }
 
 /**-----MAIN CONTENT-----**/
-#main-container {
+/*#main-container {
 	width: 95%;
-}
+}*/
 #text-main {
 	text-align: justify;
 }
 #text-main, #video-section, #map-section {
 	position: relative;
 	left: 20%;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 #text-main, #map-section {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
-#video-header, #map-header {
+#video-header, #map-header, #map-location {
 	color: #fff;
 	font-size: 1.6em;
 	padding: 10px;
@@ -73,6 +73,14 @@
 	height: 60px;
 	z-index: 100;
 	text-transform: uppercase;
+	background-color: #000;
+}
+#map-location {
+	color: #fff;
+	padding: 10px;
+	position: absolute;
+	height: 60px;
+	z-index: 100;
 	background-color: #000;
 }
 #video-header {
@@ -90,34 +98,78 @@
 	height: 60px;
 	opacity: 0.8;
 }
+#map-location {
+	top: 390px;
+	width: 100%;
+	font-size: 1.1em;
+	text-transform: none;
+	opacity: 0.9;
+}
 #map {
 	margin-left: 0;
 	width: 100%;
 	height: 400px;
+}
+#content h1 {
+	font-size: 1.2em;
+	margin-top: 5px;
+	clear: both;
+}
+#content p, #content a{
+	font-size: .75em;
+}
+#content a {
+	float: left;
+}
+
+#text-historia-main div article {
+	margin: 20px;
+}
+
+fieldset {
+	position: relative;
+	padding: .35em .635em .75em;
+	margin: 15px;
+	border: 1px solid silver;
+	width: 60%;
+	margin-left: 20%;
+}
+#name, #email {
+	width: 100%;
+}
+
+#message {
+	width: 100%;
+	height: 200px !important; /*to override element.style*/
+	resize: vertical;
+}
+
+#aboutHeader {
+	margin-bottom: 30px;
 }
 
 /**-------FOOTER-------*/
 footer {
 	background-color: #000;
 	color: #fff;
+	padding: 10px;
 }
-#footer-container {
+/*#footer-container {
 	width: 95%;
-}
+}*/
 #location {
 	clear: both;
 	font-size: 0.9em;
 	margin-top: 20px;
 }
-/*#footer-nav {
-	float: left;
-	text-align: left;
-}*/
-/*#footer-nav > ul li {
-	list-style: none;
-	float: left;
-	padding: 10px;
-}*/
+
+/**--------Large devices only---------**/
+@media (min-width: 1200px) {
+	#name, #email, #message {
+		width: 80%;
+	}
+}
+
 /**---------Medium devices---------**/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/**-----HEADER-----**/
@@ -135,16 +187,17 @@ footer {
 	}
 
 	/**-----MAIN CONTENT-----**/
-	.col-md-6 {
-		width: 100%;
+	#video-col, #map-col {
+		padding-right: 0;
+		padding-left: 0;
 	}
 	#text-main, #video-section, #map-section {
 		left: 0;
 		margin-right: 3%;
 		margin-left: 5%;
 	}
-	#text-main,#video-section {
-		margin-top: 20px;
+	#video-section, #map-section {
+		margin-bottom: 80px;
 	}
 
 	/**-------FOOTER-------*/
@@ -196,6 +249,10 @@ footer {
 		top: 240px;
 		padding: 5px;
 		height: auto;
+	}
+	#map-location {
+		height: auto;
+		top: 295px;
 	}
 	#map {
 		height: 300px;
@@ -253,8 +310,18 @@ footer {
 		top: 140px;
 		height: auto;
 	}
+	#map-location {
+		height: auto;
+		top: 193px;
+	}
 	#map {
 		height: 200px;
+	}
+
+	fieldset {
+		width: 90%;
+		margin-left: 5%;
+		font-size: .9em;
 	}
 
 	/**-------FOOTER-------*/
@@ -307,9 +374,24 @@ footer {
 		top: 140px;
 		height: auto;
 	}
+	#map-location {
+		height: auto;
+		top: 193px;
+	}
 	#map {
 		height: 200px;
 	}
+
+	h2 {
+		margin-top: 5px;
+		font-size: 1.3em;
+	}
+	fieldset {
+		width: 90%;
+		margin-left: 5%;
+		font-size: .8em;
+	}
+
 
 	/**-------FOOTER-------*/
 	#hours, #adress {
